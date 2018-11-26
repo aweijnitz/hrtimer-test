@@ -18,9 +18,9 @@ const report = (setResult) => {
     let min = stats.min(setResult);
     let stdDev = stats.standardDeviation(setResult);
 
-    console.log('Average (µs)\t %d', (avg/1e3).toFixed(2));
+    console.log('Avg (µs)\t %d', (avg/1e3).toFixed(2));
     console.log('Mean (µs)\t %d', (median/1e3).toFixed(2));
-    console.log('Std Dev.\t (µs) %d ', (stdDev/1e3).toFixed(2));
+    console.log('StdDev (µs)\t %d ', (stdDev/1e3).toFixed(2));
     console.log('Max (µs)\t %d', (max/1e3).toFixed(2));
     console.log('Min (µs)\t %d', (min/1e3).toFixed(2));
 
